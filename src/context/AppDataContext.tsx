@@ -37,6 +37,8 @@ interface AppDataContextType {
   removeToast: (id: string) => void;
   commandPaletteOpen: boolean;
   setCommandPaletteOpen: (open: boolean) => void;
+  mobileMenuOpen: boolean;
+  setMobileMenuOpen: (open: boolean) => void;
 }
 
 const AppDataContext = createContext<AppDataContextType | undefined>(undefined);
@@ -49,6 +51,7 @@ export const AppDataProvider: React.FC<{ children: React.ReactNode }> = ({ child
   const [quizzes, setQuizzes] = useState<QuizSession[]>(loadQuizzesFromStorage);
   const [toasts, setToasts] = useState<ToastMessage[]>([]);
   const [commandPaletteOpen, setCommandPaletteOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // Sync to local storage
   useEffect(() => saveNotesToStorage(notes), [notes]);
@@ -197,7 +200,9 @@ export const AppDataProvider: React.FC<{ children: React.ReactNode }> = ({ child
       showToast,
       removeToast,
       commandPaletteOpen,
-      setCommandPaletteOpen
+      setCommandPaletteOpen,
+      mobileMenuOpen,
+      setMobileMenuOpen
     }}>
       {children}
     </AppDataContext.Provider>

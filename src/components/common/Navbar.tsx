@@ -1,10 +1,10 @@
 import React from 'react';
 import { useAppData } from '../../context/AppDataContext';
 import { useTheme } from '../../context/ThemeContext';
-import { Search, Sun, Moon, Sparkles, Command, Plus, BookOpen, PieChart, CheckSquare } from 'lucide-react';
+import { Search, Sun, Moon, Sparkles, Command, Plus, BookOpen, PieChart, CheckSquare, Menu } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
-  const { activeModule, stats, setCommandPaletteOpen, setActiveModule, addNote, addTask } = useAppData();
+  const { activeModule, stats, setCommandPaletteOpen, setActiveModule, mobileMenuOpen, setMobileMenuOpen } = useAppData();
   const { theme, toggleTheme } = useTheme();
 
   const getModuleTitle = () => {
@@ -26,10 +26,18 @@ export const Navbar: React.FC = () => {
   };
 
   return (
-    <header className="h-16 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800/80 px-6 flex items-center justify-between sticky top-0 z-20 transition-colors">
-      {/* Title / Breadcrumb */}
+    <header className="h-16 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800/80 px-4 md:px-6 flex items-center justify-between sticky top-0 z-20 transition-colors">
+      {/* Title / Mobile Hamburger */}
       <div className="flex items-center gap-3">
-        <h2 className="font-bold text-base text-slate-800 dark:text-slate-100 flex items-center gap-2">
+        <button
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          className="md:hidden p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-brand-500 transition"
+          title="Toggle Navigation Menu"
+        >
+          <Menu className="w-5 h-5" />
+        </button>
+
+        <h2 className="font-bold text-sm md:text-base text-slate-900 dark:text-slate-100 flex items-center gap-2 truncate max-w-[200px] sm:max-w-none">
           <span>{getModuleTitle()}</span>
         </h2>
       </div>

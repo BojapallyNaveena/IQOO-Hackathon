@@ -161,53 +161,53 @@ export const AcademicDashboard: React.FC = () => {
         <div className="lg:col-span-2 space-y-6">
           {/* Quick Action Launcher Grid */}
           <div className="glass-card p-6">
-            <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100 mb-4 flex items-center gap-2">
+            <h3 className="text-sm font-extrabold text-slate-900 dark:text-slate-100 mb-4 flex items-center gap-2">
               <Sparkles className="w-4 h-4 text-brand-500" />
               <span>Quick AI Shortcuts</span>
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               <button
                 onClick={() => setActiveModule('topic-explainer')}
-                className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-850 border border-slate-200/80 dark:border-slate-800 hover:border-brand-500/50 hover:bg-brand-500/5 transition text-left group"
+                className="p-4 rounded-2xl bg-slate-900 border border-slate-800 hover:border-brand-500 hover:bg-slate-850 transition text-left group shadow-xs"
               >
-                <div className="w-8 h-8 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center mb-2.5 group-hover:scale-110 transition">
+                <div className="w-8 h-8 rounded-xl bg-brand-500/20 text-brand-400 flex items-center justify-center mb-2.5 group-hover:scale-110 transition border border-brand-500/30">
                   <Sparkles className="w-4 h-4" />
                 </div>
-                <p className="text-xs font-bold text-slate-800 dark:text-slate-200">Topic Explainer</p>
-                <p className="text-[10px] text-slate-400">ELI5 & Metaphors</p>
+                <p className="text-xs font-extrabold text-slate-100">Topic Explainer</p>
+                <p className="text-[10px] text-slate-400 font-medium">ELI5 & Metaphors</p>
               </button>
 
               <button
                 onClick={() => setActiveModule('quiz-generator')}
-                className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-850 border border-slate-200/80 dark:border-slate-800 hover:border-indigo-500/50 hover:bg-indigo-500/5 transition text-left group"
+                className="p-4 rounded-2xl bg-slate-900 border border-slate-800 hover:border-indigo-500 hover:bg-slate-850 transition text-left group shadow-xs"
               >
-                <div className="w-8 h-8 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center mb-2.5 group-hover:scale-110 transition">
+                <div className="w-8 h-8 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center mb-2.5 group-hover:scale-110 transition border border-indigo-500/30">
                   <HelpCircle className="w-4 h-4" />
                 </div>
-                <p className="text-xs font-bold text-slate-800 dark:text-slate-200">Quiz Generator</p>
-                <p className="text-[10px] text-slate-400">Interactive tests</p>
+                <p className="text-xs font-extrabold text-slate-100">Quiz Generator</p>
+                <p className="text-[10px] text-slate-400 font-medium">Interactive tests</p>
               </button>
 
               <button
                 onClick={() => setActiveModule('code-debugger')}
-                className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-850 border border-slate-200/80 dark:border-slate-800 hover:border-purple-500/50 hover:bg-purple-500/5 transition text-left group"
+                className="p-4 rounded-2xl bg-slate-900 border border-slate-800 hover:border-purple-500 hover:bg-slate-850 transition text-left group shadow-xs"
               >
-                <div className="w-8 h-8 rounded-xl bg-purple-500/10 text-purple-500 flex items-center justify-center mb-2.5 group-hover:scale-110 transition">
+                <div className="w-8 h-8 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center mb-2.5 group-hover:scale-110 transition border border-purple-500/30">
                   <Bug className="w-4 h-4" />
                 </div>
-                <p className="text-xs font-bold text-slate-800 dark:text-slate-200">Code Debugger</p>
-                <p className="text-[10px] text-slate-400">Root cause & fixes</p>
+                <p className="text-xs font-extrabold text-slate-100">Code Debugger</p>
+                <p className="text-[10px] text-slate-400 font-medium">Root cause & fixes</p>
               </button>
 
               <button
                 onClick={() => setActiveModule('code-studio')}
-                className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-850 border border-slate-200/80 dark:border-slate-800 hover:border-emerald-500/50 hover:bg-emerald-500/5 transition text-left group"
+                className="p-4 rounded-2xl bg-slate-900 border border-slate-800 hover:border-emerald-500 hover:bg-slate-850 transition text-left group shadow-xs"
               >
-                <div className="w-8 h-8 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center mb-2.5 group-hover:scale-110 transition">
+                <div className="w-8 h-8 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center mb-2.5 group-hover:scale-110 transition border border-emerald-500/30">
                   <Code2 className="w-4 h-4" />
                 </div>
-                <p className="text-xs font-bold text-slate-800 dark:text-slate-200">Code Translator</p>
-                <p className="text-[10px] text-slate-400">Python to JS/C++</p>
+                <p className="text-xs font-extrabold text-slate-100">Code Translator</p>
+                <p className="text-[10px] text-slate-400 font-medium">Python to JS/C++</p>
               </button>
             </div>
           </div>
@@ -215,13 +215,13 @@ export const AcademicDashboard: React.FC = () => {
           {/* Upcoming Deadlines Widget */}
           <div className="glass-card p-6">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2">
+              <h3 className="text-sm font-extrabold text-slate-900 dark:text-slate-100 flex items-center gap-2">
                 <Clock className="w-4 h-4 text-indigo-500" />
                 <span>Upcoming Deadlines & Tasks</span>
               </h3>
               <button 
                 onClick={() => setActiveModule('tasks')}
-                className="text-xs font-bold text-brand-500 hover:underline flex items-center gap-1"
+                className="text-xs font-extrabold text-brand-500 hover:underline flex items-center gap-1"
               >
                 View All ({tasks.length}) <ArrowRight className="w-3 h-3" />
               </button>
@@ -232,29 +232,29 @@ export const AcademicDashboard: React.FC = () => {
                 pendingTasks.map((t) => (
                   <div 
                     key={t.id}
-                    className="flex items-center justify-between p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-850 border border-slate-200/80 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 transition"
+                    className="flex items-center justify-between p-3.5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition"
                   >
                     <div className="flex items-center gap-3">
                       <button
                         onClick={() => toggleTaskCompleted(t.id)}
-                        className="w-5 h-5 rounded-md border border-slate-300 dark:border-slate-600 hover:border-brand-500 flex items-center justify-center text-brand-500 transition"
+                        className="w-5 h-5 rounded-md border border-slate-600 hover:border-brand-500 flex items-center justify-center text-brand-500 transition"
                       >
                         {t.completed && <CheckCircle2 className="w-4 h-4 fill-brand-500 text-white" />}
                       </button>
                       <div>
-                        <p className={`text-xs font-semibold ${t.completed ? 'line-through text-slate-400' : 'text-slate-800 dark:text-slate-200'}`}>
+                        <p className={`text-xs font-extrabold ${t.completed ? 'line-through text-slate-500' : 'text-slate-100'}`}>
                           {t.title}
                         </p>
-                        <p className="text-[10px] text-slate-400">{t.subject} • Due {new Date(t.dueDate).toLocaleDateString()}</p>
+                        <p className="text-[10px] text-slate-400 font-medium">{t.subject} • Due {new Date(t.dueDate).toLocaleDateString()}</p>
                       </div>
                     </div>
 
                     <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${
                       t.priority === 'high' 
-                        ? 'bg-rose-500/10 text-rose-500 border-rose-500/30' 
+                        ? 'bg-rose-500/20 text-rose-300 border-rose-500/40' 
                         : t.priority === 'medium'
-                        ? 'bg-amber-500/10 text-amber-500 border-amber-500/30'
-                        : 'bg-slate-200 dark:bg-slate-800 text-slate-500 border-slate-300 dark:border-slate-700'
+                        ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
+                        : 'bg-slate-800 text-slate-400 border-slate-700'
                     }`}>
                       {t.priority.toUpperCase()}
                     </span>
@@ -272,7 +272,7 @@ export const AcademicDashboard: React.FC = () => {
           {/* Subject Attendance Mini Widget */}
           <div className="glass-card p-6">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2">
+              <h3 className="text-sm font-extrabold text-slate-900 dark:text-slate-100 flex items-center gap-2">
                 <PieChart className="w-4 h-4 text-emerald-500" />
                 <span>Attendance Alerts</span>
               </h3>
@@ -289,22 +289,22 @@ export const AcademicDashboard: React.FC = () => {
                 const pct = Math.round((sub.attended / sub.total) * 100);
                 const isCritical = pct < sub.targetPercentage;
                 return (
-                  <div key={sub.id} className="p-3 rounded-2xl bg-slate-50 dark:bg-slate-850 border border-slate-200/80 dark:border-slate-800 space-y-2">
-                    <div className="flex justify-between items-center text-xs font-semibold">
-                      <span className="text-slate-800 dark:text-slate-200 truncate max-w-[140px]">{sub.name}</span>
-                      <span className={isCritical ? 'text-rose-500 font-bold' : 'text-slate-700 dark:text-slate-300'}>
+                  <div key={sub.id} className="p-3.5 rounded-2xl bg-slate-900 border border-slate-800 space-y-2">
+                    <div className="flex justify-between items-center text-xs font-bold">
+                      <span className="text-slate-100 truncate max-w-[140px]">{sub.name}</span>
+                      <span className={isCritical ? 'text-rose-400 font-extrabold' : 'text-slate-300'}>
                         {pct}% ({sub.attended}/{sub.total})
                       </span>
                     </div>
                     {/* Progress Bar */}
-                    <div className="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2 overflow-hidden">
+                    <div className="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
                       <div 
-                        className={`h-full transition-all duration-300 ${isCritical ? 'bg-rose-500' : pct > 85 ? 'bg-emerald-500' : 'bg-brand-500'}`} 
+                        className={`h-full transition-all duration-300 ${isCritical ? 'bg-rose-500' : pct > 85 ? 'bg-emerald-400' : 'bg-brand-500'}`} 
                         style={{ width: `${pct}%` }} 
                       />
                     </div>
                     {isCritical && (
-                      <p className="text-[10px] text-rose-500 font-semibold flex items-center gap-1">
+                      <p className="text-[10px] text-rose-400 font-bold flex items-center gap-1">
                         <AlertTriangle className="w-3 h-3" /> Below 75% target threshold!
                       </p>
                     )}
@@ -317,7 +317,7 @@ export const AcademicDashboard: React.FC = () => {
           {/* Recent Class Notes */}
           <div className="glass-card p-6">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2">
+              <h3 className="text-sm font-extrabold text-slate-900 dark:text-slate-100 flex items-center gap-2">
                 <FileText className="w-4 h-4 text-purple-500" />
                 <span>Recent Notes</span>
               </h3>
@@ -334,13 +334,13 @@ export const AcademicDashboard: React.FC = () => {
                 <div 
                   key={n.id}
                   onClick={() => setActiveModule('notes')}
-                  className="p-3 rounded-2xl bg-slate-50 dark:bg-slate-850 border border-slate-200/80 dark:border-slate-800 hover:border-purple-500/40 cursor-pointer transition"
+                  className="p-3.5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-purple-500/50 cursor-pointer transition"
                 >
-                  <p className="text-xs font-bold text-slate-800 dark:text-slate-200 line-clamp-1">{n.title}</p>
-                  <p className="text-[10px] text-slate-400 mb-2">{n.subject}</p>
+                  <p className="text-xs font-extrabold text-slate-100 line-clamp-1">{n.title}</p>
+                  <p className="text-[10px] text-slate-400 mb-2 font-medium">{n.subject}</p>
                   <div className="flex gap-1 flex-wrap">
                     {n.tags.map((t, idx) => (
-                      <span key={idx} className="text-[9px] font-semibold bg-brand-500/10 text-brand-500 px-2 py-0.5 rounded-full">
+                      <span key={idx} className="text-[9px] font-bold bg-brand-500/20 text-brand-300 px-2 py-0.5 rounded-full border border-brand-500/30">
                         #{t}
                       </span>
                     ))}
